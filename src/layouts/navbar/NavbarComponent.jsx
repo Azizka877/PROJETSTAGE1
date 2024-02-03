@@ -41,7 +41,7 @@ function NavbarComponent({ bgColor, navbarContainerStyles }) {
             </div>
           </form>
           {/* User */}
-          <ul className="flex-col md:flex-row list-none items-center text-black hidden md:flex">
+          <ul className="flex-col md:flex-row list-none items-center text-black  md:flex">
             <UserDropdown />
           </ul>
         </div>
