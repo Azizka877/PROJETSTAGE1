@@ -32,7 +32,7 @@ export default function CardStats({
                   statIconColor
                 }
               >
-                <i className={statIconName}></i>
+                <i className="bi bi-archive"></i>
               </div>
             </div>
           </div>
