@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "bootstrap-icons/font/bootstrap-icons.min.css"
 
 export default function CardStats({
   statSubtitle,
@@ -40,9 +41,9 @@ export default function CardStats({
               <i
                 className={
                   statArrow === "up"?
-                     "fas fa-arrow-up":
+                     "bi bi-arrow-up-short":
                      statArrow === "down"?
-                     "fas fa-arrow-down":
+                     "bi bi-arrow-down-short":
                      ""
                 }
               ></i>{" "}
@@ -63,7 +64,7 @@ CardStats.defaultProps = {
   statPercent: "3.48",
   statPercentColor: "text-emerald-500",
   statDescripiron: "Since last month",
-  statIconName: "far fa-chart-bar",
+  statIconName: "bi bi-android",
   statIconColor: "bg-red-500",
 };
 

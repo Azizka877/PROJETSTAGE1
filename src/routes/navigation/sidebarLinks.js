@@ -14,12 +14,12 @@ import { HiClock } from "react-icons/hi";
 | de SplitShell
 */
 export const links = [
-    { path: ACCEUIL_PATH, icon: HiDatabase, label: "DASHBORD" },
-    { path: PRODUCTS_PATH, icon: HiClock, label: "SETTINGS" },
-    { path: TABLES_PATH, icon: HiTable, label: "TABLES" },
-    { path: MAPS_PATH, icon: HiMap, label: "MAP" },
-    { path: Login_PATH, icon: HiPrinter, label: "LOGIN" },
-    { path: REGIST_PATH, icon: HiLogin, label: "REGISTER" },
+    { path: ACCEUIL_PATH, icon: HiDatabase, label: "Dashbord" },
+    { path: PRODUCTS_PATH, icon: HiClock, label: "Settings" },
+    { path: TABLES_PATH, icon: HiTable, label: "Tables" },
+    { path: MAPS_PATH, icon: HiMap, label: "Map" },
+    { path: Login_PATH, icon: HiPrinter, label: "Login" },
+    { path: REGIST_PATH, icon: HiLogin, label: "Register" },
     { path: LANGING_PATH, icon: HiHome, label: "Landing Page" },
     { path: PROFILE_PATH, icon: HiHome, label: "Profil Page" },
     { path: STYLES_PATH, icon: HiHome, label: "Styles" },

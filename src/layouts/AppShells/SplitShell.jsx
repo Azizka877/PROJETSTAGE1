@@ -19,10 +19,10 @@ const SplitShell = () => {
             <NavbarComponent />
             <SidebarComponent
                 bgColor={"#fff"}
-                activeLinkColor={"#fff"}
-                activeLinkBgColor="rgba(0,5,10,.5)"
-                linkColor="black"
-                colorOnHover={"black"}
+                activeLinkColor={"#0284c7"}
+                activeLinkBgColor=""
+                linkColor="gray"
+                colorOnHover={"#0284c7"}
             />
             <Outlet />
         </SpliTemplateScreen>
