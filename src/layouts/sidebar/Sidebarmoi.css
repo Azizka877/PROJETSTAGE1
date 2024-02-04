@@ -1,0 +1,22 @@
+.mynav{
+    color: white;
+}
+.mynav li a{
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+.mynav li a:active{
+    color: blue;
+}
+.mynav li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.mynav li a i{
+    width: 25px;
+    text-align: center;
+}
