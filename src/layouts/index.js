@@ -46,9 +46,9 @@ const SidebarPaner = styled.div`
 `;
 const SideMenuController = styled.div`
 position: absolute;
-top: 5px;
+top: 15px;
 // right: -30px;
-left: 20px;
+left: 200px;
 width: 25px;
 height: 25px;
 background-color: #fff;
@@ -127,13 +127,16 @@ const SpliTemplateScreen = ({ children }) => {
         {navbar}</NavbarPaner>
       <BodyContainer>
         <SidebarPaner openedMenu={openedMenu} ref={sidebarRef}>
-        <SideMenuController onClick={handleResize}>
+          <div className="d-flex mt-5 justify-content-between">
+            <span className="fw-bold ms-5  fs-1">NOTUS REACT</span>
+            <SideMenuController onClick={handleResize}>
             {openedMenu ? (
               <FaAlignLeft className="menu-controller-icon" />
             ) : (
               <FaAlignRight className="menu-controller-icon" />
             )}
          </SideMenuController>
+          </div>
           {sidebar}
         </SidebarPaner>
         <ContaintOutlet openedMenu={openedMenu} minViewPort={minViewPort}>
