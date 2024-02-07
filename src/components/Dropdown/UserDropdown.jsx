@@ -28,11 +28,16 @@ const UserDropdown = () => {
         }}
       >
         <div className="items-center flex">
-          <span className="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full">
+          <span className="w-8 h-8 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full">
             <img
               alt="..."
               className="w-full rounded-full align-middle border-7 shadow-lg"
               src={UserImage}
+              ref={btnDropdownRef}
+              onClick={(e) => {
+                e.preventDefault();
+                dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
+              }}
             />
           </span>
         </div>
@@ -47,7 +52,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-black"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -56,7 +61,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-black"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -65,7 +70,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-black"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -75,7 +80,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-black"
           }
           onClick={(e) => e.preventDefault()}
         >
