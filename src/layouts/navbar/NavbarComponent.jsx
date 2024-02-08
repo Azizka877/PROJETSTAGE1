@@ -1,9 +1,11 @@
 // import Input from "components/Input";
 import React from "react";
+import SearchIcon from "@mui/icons-material/Search";
 import UserDropdown from "components/Dropdown/UserDropdown";
 import "bootstrap-icons/font/bootstrap-icons.min.css"
 import "./navbarComp.css"
 // import { BiMenu } from "react-icons/bi";
+import Input from "@mui/material/Input";
 
 function NavbarComponent({ bgColor, navbarContainerStyles }) {
   // const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -34,13 +36,14 @@ function NavbarComponent({ bgColor, navbarContainerStyles }) {
           <form className="flex items-center">
   <div className="relative flex items-stretch me-2">
     <span className="z-10  leading-snug font-normal t-0 text-center text-blueGray-300 absolute bg-transparent  rounded text-base items-center justify-center w-8 pl-1 py-2">
-      <i className="bi bi-search"></i>
+      {/* <i className="bi bi-search"></i> */}
     </span>
-    <input
+    {/* <input
       type="search"
       placeholder="Search here..."
       className="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 relative bg-white  shadow outline-none focus:outline-none focus:ring rounded text-sm  pl-10"
-    />
+    /> */}
+    <Input placeholder="Search here..." startIcon={ <SearchIcon/> } style={{ backgroundColor: "#fff" }} ></Input>
   </div>
 
   {/* User */}
